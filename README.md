@@ -27,4 +27,4 @@ El proyecto sigue una estructura organizada para separar la lógica de la docume
 
 * `/docs`: Contiene el informe académico completo (Marco Teórico, Metodología) y el Diagrama de Flujo lógico.
 * `/src`: Contiene los scripts y el código fuente del juego.
-* `/data`: Almacena el banco de palabras utilizado por el sistema.
+* `/data`: Almacena el banco de palabras utilizado por el sistema. 
