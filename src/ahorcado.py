@@ -48,7 +48,7 @@ def jugar():
         
         # 3. Condicionales - Condición de Victoria
         if "_" not in progreso:
-            print("\n¡FELICIDADES! 🎉 Has adivinado la palabra exacta.")
+            print("\n¡FELICIDADES! Has adivinado la palabra exacta.")
             break
             
         intento = input("\nIngresa una letra (o escribe 'pista' por el costo de 2 vidas): ").lower().strip()
@@ -58,18 +58,18 @@ def jugar():
         if intento == "pista":
             if vidas > 2:
                 vidas -= 2
-                print("💡 PISTA UTILIZADA (-2 vidas): La palabra está relacionada con la carrera de sistemas.")
+                print(" PISTA UTILIZADA (-2 vidas): La palabra está relacionada con la carrera de sistemas.")
             else:
-                print("⚠️ No tienes suficientes vidas para pedir una pista. ¡Te arriesgas a perder!")
+                print(" No tienes suficientes vidas para pedir una pista. ¡Te arriesgas a perder!")
             continue
 
         # Validaciones de entrada de usuario
         if len(intento) != 1 or not intento.isalpha():
-            print("⚠️ Entrada inválida. Por favor, ingresa solo una letra.")
+            print(" Entrada inválida. Por favor, ingresa solo una letra.")
             continue
             
         if intento in letras_adivinadas:
-            print("⚠️ Ya intentaste con esa letra. Prueba con otra.")
+            print(" Ya intentaste con esa letra. Prueba con otra.")
             continue
             
         # Registrar el intento válido
@@ -77,15 +77,15 @@ def jugar():
         
         # Verificar si acertó o falló
         if intento in palabra_secreta:
-            print("✅ ¡Correcto! La letra está en la palabra.")
+            print(" ¡Correcto! La letra está en la palabra.")
         else:
             vidas -= 1
-            print("❌ Letra incorrecta. Pierdes una vida.")
+            print(" Letra incorrecta. Pierdes una vida.")
             
     # Fin del bucle - Condición de Derrota
     if vidas == 0:
         print("\n" + "="*40)
-        print("💀 ¡FIN DEL JUEGO! Te has quedado sin vidas.")
+        print(" ¡FIN DEL JUEGO! Te has quedado sin vidas.")
         print(f"La palabra correcta era: {palabra_secreta.upper()}")
         print("="*40)
 
