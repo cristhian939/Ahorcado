@@ -18,8 +18,8 @@ El objetivo principal de este proyecto es implementar la lógica de un juego int
 
 * **Lenguaje:** Python 3.14.6
 * **Entorno de Desarrollo:** Visual Studio Code
-* **Control de Versiones:** Git y GitHub
-* **Diagramación:** (Coloca la herramienta que usaste, ej. Lucidchart / Draw.io)
+* **Control de Versiones:** GitHub
+* **Diagramación:** Lucidchart
 
 ## Estructura del Repositorio
 
