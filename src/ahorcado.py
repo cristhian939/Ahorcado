@@ -5,7 +5,7 @@ def cargar_palabras(ruta_archivo):
     """Lee el archivo de texto y retorna una lista de palabras."""
     try:
         with open(ruta_archivo, 'r', encoding='utf-8') as archivo:
-            # Lee las líneas, quita espacios/saltos de línea y filtra líneas vacías
+            # Lee las líneas, quita espacios y saltos de línea y filtra líneas vacías
             palabras = [linea.strip().lower() for linea in archivo if linea.strip()]
         return palabras
     except FileNotFoundError:
@@ -30,7 +30,7 @@ def jugar():
     print("       ¡BIENVENIDO AL AHORCADO!         ")
     print("========================================")
     
-    # 2. Estructura Repetitiva (Bucle Principal)
+    # 2. Bucle Principal
     while vidas > 0:
         print("\n" + "="*40)
         
@@ -46,7 +46,7 @@ def jugar():
         print(f"Vidas restantes: {vidas}")
         print(f"Letras usadas: {', '.join(letras_adivinadas) if letras_adivinadas else 'Ninguna'}")
         
-        # 3. Estructuras Lógicas (Condicionales) - Condición de Victoria
+        # 3. Condicionales - Condición de Victoria
         if "_" not in progreso:
             print("\n¡FELICIDADES! 🎉 Has adivinado la palabra exacta.")
             break
